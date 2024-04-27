@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 option.classList.remove("size-option-selected")
             });
             selectedRadio.closest('.size-option').classList.add('size-option-selected');
-            selectedRadio.closest('.size-option-circle').classList.add('size-option-circle-selected');
         }
     }
 
@@ -46,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
         radio.addEventListener('change', setSelectedSize);
     });
 
-    setSelectedSize();
 
     let quantity = 1; // Initial quantity value
 

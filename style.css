@@ -405,6 +405,12 @@ input[type="radio"]:checked::before {
   padding-right: 80px;
   gap: 11px;
 }
+@media (max-width: 776px) {
+  .size-options {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
 
 .size-option {
   border-radius: 8px;
