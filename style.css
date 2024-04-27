@@ -325,6 +325,8 @@ input[type="radio"]:checked::before {
 
 .color-options {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 13px;
   gap: 12px;
 }
@@ -338,14 +340,15 @@ input[type="radio"]:checked::before {
 
 .color-option {
   position:relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  
   padding: 7px;
 }
 
 .selected-color-indicator {
-  display : none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 11px;
   left: 11px;
@@ -355,7 +358,11 @@ input[type="radio"]:checked::before {
   box-sizing: border-box; 
   background-color: transparent; 
   z-index: 1;
+  color: white;
+  padding: auto;
 }
+
+
 
 .color-swatch-yellow {
   background-color: #ECDECC;
